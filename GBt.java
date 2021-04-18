@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class GBt {
+public class GBt extends Frame{
     public GBt(){
         super("GB");
 
@@ -22,14 +22,15 @@ public class GBt {
         Gr.setConstraints(b3, con);
         add(b3);
 
-        con.gridWidth = 2;
+        con.gridwidth = 2;
         con.gridheight = 3;
         Button b4 = new Button("B4");
         Gr.setConstraints(b4, con);
         add(b4);
 
-        con.gridwidth = GridBagDonstraints.REMAINDER;
+        con.gridwidth = GridBagConstraints.REMAINDER;
         con.gridheight = 1;
+        con.weighty = 0.0;
 
         Button b5 = new Button("B5");
         Gr.setConstraints(b5, con);
